@@ -14,7 +14,10 @@ function rps(input, machine) {
   console.log(machine);
 }
 
-function play(games) {
+function game() {
+  let games = prompt("how many games?");
+  games = parseInt(games);
+  console.log(games);
   let count = 0;
   while (count < games) {
     const input = prompt("Rock/Paper/Scissors?").toLowerCase();
@@ -23,4 +26,4 @@ function play(games) {
     count++;
   }
 }
-play(3);
+game();
