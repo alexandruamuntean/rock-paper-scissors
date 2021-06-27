@@ -12,14 +12,19 @@
 <body>
   <div class="container">
     <header class="header">
-      <h1 class='heading-1'>rock.paper.scissors</h1>
+      <h1 class='heading-1 heading--light'>rock.paper.scissors</h1>
     </header>
     <main class="main">
-      <div class="options">
-        <button class="option rock">rock</button>
-        <button class="option paper">paper</button>
-        <button class="option scissors">scissors</button>
+      <div class="display">
+        <div class="user"><span class="user__choice heading-2 heading--light">rock</span></div>
+        <span class="versus heading-3 heading--light">.vs</span>
+        <div class="machine"><span class="machine__choice heading-2 heading--light">paper</span></div>
       </div>
+      <ul class="options">
+        <li class="option rock"><span>rock</span></li>
+        <li class="option paper"><span>paper</span></li>
+        <li class="option scissors"><span>scissors</span></li>
+      </ul>
     </main>
   </div>
   <script src='index.js'></script>
