@@ -14,16 +14,16 @@ function rps(input, machine) {
   console.log(machine);
 }
 
-function game() {
-  let games = prompt("how many games?");
-  games = parseInt(games);
-  console.log(games);
-  let count = 0;
-  while (count < games) {
-    const input = prompt("Rock/Paper/Scissors?").toLowerCase();
-    const randomize = Math.floor(Math.random() * 10);
-    rps(input, randomize);
-    count++;
-  }
-}
-game();
+// function game() {
+//   let games = prompt("how many games?");
+//   games = parseInt(games);
+//   console.log(games);
+//   let count = 0;
+//   while (count < games) {
+//     const input = prompt("Rock/Paper/Scissors?").toLowerCase();
+//     const randomize = Math.floor(Math.random() * 10);
+//     rps(input, randomize);
+//     count++;
+//   }
+// }
+// game();
