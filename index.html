@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
   <link rel="stylesheet" href="css/style.css">
+
   <title>Rock Paper Scissors</title>
 </head>
 
@@ -16,18 +18,47 @@
     </header>
     <main class="main">
       <div class="display">
-        <div class="user"><span class="user__choice heading-2 heading--light">rock</span></div>
-        <span class="versus heading-3 heading--light">.vs</span>
-        <div class="machine"><span class="machine__choice heading-2 heading--light">paper</span></div>
+
+        <div class="user player">
+          <!-- user choice -->
+          <span class="user__choice heading-2 heading--light u-mb-l">
+            <i class="far fa-hand-rock fa-4x"></i>
+          </span>
+          <div class="user__score">
+            <span class='heading-3 heading--light'>you:</span><span
+              class='user__count heading-3 heading--light'>0</span>
+          </div>
+        </div>
+        <span class="versus heading-1 heading--light">.vs</span>
+
+        <div class="machine player">
+          <!-- machine choice -->
+          <span class="machine__choice heading-2 heading--light u-mb-l">
+            <i class="far fa-hand-scissors fa-4x"></i></span>
+          <div class="machine__score">
+            <span class='heading-3 heading--light'>machine:</span>
+            <span class='machine__count heading-3 heading--light'>0</span>
+          </div>
+        </div>
+      </div>
+      <!-- num of games -->
+      <div class="games">
+        <h3 data-screen="prompt" class="heading-3 heading--light">how many games?</h3>
+        <div class="games-box">
+          <span data-count='minus' class="heading-3 heading--light btn-outline">-</span>
+          <span data-count="total" class="heading-3 heading--light">1</span>
+          <span data-count='plus' class="heading-3 heading--light btn-outline">+</span>
+        </div>
       </div>
       <ul class="options">
-        <li class="option rock"><span>rock</span></li>
-        <li class="option paper"><span>paper</span></li>
-        <li class="option scissors"><span>scissors</span></li>
+        <li data-option='start' class='start'><span>START</span></li>
+        <li data-select='rock'><span>rock</span></li>
+        <li data-select='paper'><span>paper</span></li>
+        <li data-select='scissors'><span>scissors</span></li>
       </ul>
     </main>
   </div>
-  <script src='index.js'></script>
+  <script src='script/index.js'></script>
 </body>
 
 </html>

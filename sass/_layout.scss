@@ -1,24 +1,24 @@
 .container {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .header {
   @include flex-center-all;
-  height: 40rem;
+  height: 20vh;
 }
 
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  height: 80vh;
+  height: 60vh;
 }
 
 .display {
   display: flex;
   justify-content: space-between;
-  // border: 1px solid lightblue;
-  width: 40vw;
+  width: 60rem;
   position: relative;
 }
 
@@ -29,6 +29,26 @@
   transform: translate(-50%, -50%);
 }
 
-.options {
-  margin-top: 25rem;
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+}
+
+.games {
+  @include flex-center-all;
+  flex-direction: column;
+}
+
+.games-box {
+  margin-top: 5rem;
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player {
+  @include flex-center-all;
+  flex-direction: column;
 }
