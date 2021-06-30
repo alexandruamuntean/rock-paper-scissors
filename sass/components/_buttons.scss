@@ -1,11 +1,11 @@
 ul {
   padding: 0;
   list-style-type: none;
-  transform: translateX(7%);
+  // transform: translateX(7%);
 }
 
 li {
-  font-size: 25px;
+  font-size: 2.5rem;
   width: 8em;
   height: 2em;
   color: $secondary-color;
@@ -40,6 +40,7 @@ li::after {
 }
 
 li span {
+  font-size: 1.5rem;
   position: relative;
   height: 120%;
   top: -10%;
@@ -49,8 +50,8 @@ li span {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Courier New", Courier, monospace;
-  transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+  font-family: "Press Start 2P", cursive;
+  // transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
   transition: 0.3s;
 }
 
@@ -73,4 +74,18 @@ li:hover span {
 .start {
   color: gold;
   font-weight: 900;
+}
+
+.reset {
+  color: tomato;
+  font-weight: 900;
+}
+
+.btn {
+  &--enabled {
+    display: inline-block;
+  }
+  &--disabled {
+    display: none;
+  }
 }

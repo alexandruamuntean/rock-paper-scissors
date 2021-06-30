@@ -22,19 +22,20 @@
         <div class="user player">
           <!-- user choice -->
           <span class="user__choice heading-2 heading--light u-mb-l">
-            <i class="far fa-hand-rock fa-4x"></i>
+            <i class="far fa-question-circle fa-4x"></i>
           </span>
           <div class="user__score">
             <span class='heading-3 heading--light'>you:</span><span
               class='user__count heading-3 heading--light'>0</span>
           </div>
         </div>
-        <span class="versus heading-1 heading--light">.vs</span>
+        <span class="versus heading-1 heading--light">vs</span>
 
         <div class="machine player">
           <!-- machine choice -->
           <span class="machine__choice heading-2 heading--light u-mb-l">
-            <i class="far fa-hand-scissors fa-4x"></i></span>
+            <i class="far fa-question-circle fa-4x"></i>
+          </span>
           <div class="machine__score">
             <span class='heading-3 heading--light'>machine:</span>
             <span class='machine__count heading-3 heading--light'>0</span>
@@ -43,7 +44,7 @@
       </div>
       <!-- num of games -->
       <div class="games">
-        <h3 data-screen="prompt" class="heading-3 heading--light">how many games?</h3>
+        <h3 data-screen="prompt" class="heading-3 heading--light">How many games?</h3>
         <div class="games-box">
           <span data-count='minus' class="heading-3 heading--light btn-outline">-</span>
           <span data-count="total" class="heading-3 heading--light">1</span>
@@ -51,7 +52,8 @@
         </div>
       </div>
       <ul class="options">
-        <li data-option='start' class='start'><span>START</span></li>
+        <li data-option='start' class='start btn--enabled'><span>start</span></li>
+        <li data-option='reset' class='reset btn--disabled'><span>reset</span></li>
         <li data-select='rock'><span>rock</span></li>
         <li data-select='paper'><span>paper</span></li>
         <li data-select='scissors'><span>scissors</span></li>

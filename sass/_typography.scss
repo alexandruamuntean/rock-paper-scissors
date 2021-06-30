@@ -1,16 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+}
+
 .heading {
   &--light {
     color: $secondary-color;
   }
   &-1 {
     font-size: 5rem;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Press Start 2P", cursive;
+    &-2 {
+      font-size: 4rem;
+    }
+    &-3 {
+      font-size: 3rem;
+      font-family: "Press Start 2P", cursive;
+    }
   }
-  &-2 {
-    font-size: 4rem;
-  }
-  &-3 {
-    font-size: 3rem;
-    font-family: "Courier New", Courier, monospace;
-  }
+}
+
+.question {
+  font-size: 8rem;
 }
