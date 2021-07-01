@@ -59,6 +59,7 @@ function game() {
     startBtn.classList.remove("btn--enabled");
     resetBtn.classList.add("btn--enabled");
     resetBtn.classList.remove("btn--disabled");
+    selections.forEach((selection) => (selection.style.display = "none"));
     resetBtn.addEventListener("click", () => {
       resetGame();
     });

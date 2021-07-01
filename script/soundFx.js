@@ -10,6 +10,7 @@ soundFxBtn.addEventListener("click", () => {
     soundFxBtn.innerHTML = "Sound off";
   } else {
     music.pause();
+    music.currentTime = 0;
     soundFxBtn.setAttribute("data-playing", "false");
     soundFxBtn.innerHTML = "Sound on";
   }

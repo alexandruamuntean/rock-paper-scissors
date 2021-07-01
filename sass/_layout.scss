@@ -10,7 +10,6 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   height: 60vh;
 }
@@ -52,4 +51,15 @@
 .player {
   @include flex-center-all;
   flex-direction: column;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  height: 10rem;
+
+  @include flex-center-all;
 }

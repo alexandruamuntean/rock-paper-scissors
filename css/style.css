@@ -175,7 +175,6 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   height: 60vh; }
 
@@ -215,6 +214,17 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 body {
   font-family: "Press Start 2P", cursive;
