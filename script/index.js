@@ -37,27 +37,13 @@ function game() {
     return totalNumGames;
   };
 
+  const setGameIcon = (el, value) => {
+    el.style.backgroundImage = `url(../assets/img/${value}.svg)`;
+  };
+
   const resetGame = () => {
     // cheating by just refreshing the page
     window.location.reload();
-    //tried to reset data it's not working might be a scoping issue or the paradigm => use OOP instead
-    // count = userScore = machineScore = 0;
-    // totalNumGames = 1;
-    // gameStarted = false;
-    // input = "";
-    // startBtn.innerHTML = `<span>start</span>`;
-    // userCount.innerHTML = `${userScore}`;
-    // machineCount.innerHTML = `${machineScore}`;
-    // userChoice.innerHTML = ' <i class="far fa-question-circle fa-4x"></i>';
-    // machineChoice.innerHTML = ' <i class="far fa-question-circle fa-4x"></i>';
-    // totalGames.innerHTML = `${totalNumGames}`;
-    // prompt.innerHTML = "How many games?";
-    // startBtn.classList.add("btn--enabled");
-    // startBtn.classList.remove("btn--disabled");
-    // resetBtn.classList.add("btn--disabled");
-    // resetBtn.classList.remove("btn--enabled");
-    // console.log("reset count", count);
-    // console.log("reset total games", totalNumGames);
   };
 
   const gameOver = (player1, player2) => {
@@ -128,14 +114,14 @@ function game() {
     if (!userInput) return;
     if (randomValue <= 3) {
       gameChoice = "rock";
-      machineChoice.innerHTML = `<i class="far fa-hand-rock fa-4x"></i>`;
     } else if (randomValue > 3 && randomValue <= 6) {
       gameChoice = "paper";
-      machineChoice.innerHTML = `<i class="far fa-hand-paper fa-4x"></i>`;
     } else {
       gameChoice = "scissors";
-      machineChoice.innerHTML = `<i class="far fa-hand-scissors fa-4x"></i>`;
     }
+
+    setGameIcon(machineChoice, gameChoice);
+
     // game logic
     if (gameStarted) {
       if (count == totalNumGames) {
@@ -156,7 +142,7 @@ function game() {
     selections.forEach((selection) => {
       selection.addEventListener("click", () => {
         input = selection.getAttribute("data-select");
-        userChoice.innerHTML = `<i class="far fa-hand-${input} fa-4x"></i>`;
+        setGameIcon(userChoice, input);
         gameLogic(input);
       });
     });
