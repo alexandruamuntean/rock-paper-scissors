@@ -5,6 +5,10 @@ body {
   font-size: 2rem;
 }
 
+button {
+  font-family: "Press Start 2P", cursive;
+}
+
 .heading {
   &--light {
     color: $secondary-color;
@@ -22,6 +26,7 @@ body {
   }
 }
 
-.question {
+.question,
+.choice {
   font-size: 8rem;
 }

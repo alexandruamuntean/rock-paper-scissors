@@ -82,6 +82,21 @@ li:hover span {
 }
 
 .btn {
+  border: 0;
+  padding: 1rem 2rem;
+  color: $secondary-color;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  &--clear {
+    background-color: transparent;
+
+    &:hover,
+    &:active {
+      color: gold;
+    }
+  }
+
   &--enabled {
     display: inline-block;
   }

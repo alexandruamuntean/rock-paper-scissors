@@ -220,6 +220,9 @@ body {
   font-family: "Press Start 2P", cursive;
   font-size: 2rem; }
 
+button {
+  font-family: "Press Start 2P", cursive; }
+
 .heading--light {
   color: #c9c9c9; }
 
@@ -232,7 +235,8 @@ body {
     font-size: 3rem;
     font-family: "Press Start 2P", cursive; }
 
-.question {
+.question,
+.choice {
   font-size: 8rem; }
 
 ul {
@@ -304,8 +308,17 @@ li:hover span {
   color: tomato;
   font-weight: 900; }
 
-.btn--enabled {
-  display: inline-block; }
-
-.btn--disabled {
-  display: none; }
+.btn {
+  border: 0;
+  padding: 1rem 2rem;
+  color: #c9c9c9;
+  font-size: 1.5rem;
+  cursor: pointer; }
+  .btn--clear {
+    background-color: transparent; }
+    .btn--clear:hover, .btn--clear:active {
+      color: gold; }
+  .btn--enabled {
+    display: inline-block; }
+  .btn--disabled {
+    display: none; }
